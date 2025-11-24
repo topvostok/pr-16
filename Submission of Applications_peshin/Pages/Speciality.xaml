@@ -5,37 +5,41 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_peshin.Pages"
            mc:Ignorable="d" 
+     
+      d:DesignHeight="410" d:DesignWidth="792"
       Title="Speciality" Height="583">
+    <ScrollViewer VerticalScrollBarVisibility="Visible">
     <Grid Background="#F8F9FA">
         <Grid Margin="0,0,0,528" Background="White">
             <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Source="/Images/logo.png"/>
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
             <Label Content="Пермского авиационного техникума им. А.Д. Швецова" HorizontalAlignment="Left" Margin="55,24,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Grid Margin="0,60,0,-0.4">
-            <Label Content="Специальность " Margin="10,5,679,0" VerticalAlignment="Top" FontWeight="Bold"/>
-            <Label Content="Выберите специальность, на которой желаете учиться:" Margin="9,31,469,0" VerticalAlignment="Top"/>
-            <Label Content="Можете выбрать несколько специальностей:" Margin="22,53,553,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
-            <CheckBox x:Name="cbSpeciality1" Content="12.02.01 Авиационные приборы и комплексы" Margin="22,75,497,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality2" Content="15.02.09 Адаптивные технологии" Margin="22,90,570,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality3" Content="09.02.07 Информационные системы и программирование (Программист)" Margin="22,105,343,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality4" Content="09.02.07 Информационные системы и программирование (Разработчик веб и мультимедийных приложений)" Margin="22,120,143,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality5" Content="09.02.01 Компьютерные системы и комплексы" Margin="22,135,494,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality6" Content="22.02.05 Литейное производство черных и цветных металлов" Margin="22,150,410,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality7" Content="15.02.10 Мехатроника и мобильная робототехника" Margin="22,165,469,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality8" Content="09.02.05 Прикладная информатика (по отраслям)" Margin="22,180,479,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality9" Content="24.02.03 Производство авиационных двигателей" Margin="22,195,481,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality10" Content="12.02.08 Радиоэлектронные приборные устройства" Margin="22,210,467,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality11" Content="15.02.08 Технология машиностроения" Margin="22,225,541,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality12" Content="15.02.15 Технология металлообрабатывающего производства" Margin="22,240,408,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbSpeciality13" Content="27.02.07 Управление качеством продукции, процессов и услуг" Margin="22,0,406,0" VerticalAlignment="Center"/>
-            <Label Content="Выберите один из вариантов:" Margin="22,310,623,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
-            <RadioButton x:Name="rbFirstTime" Content="впервые" Margin="22,338,703,0" VerticalAlignment="Top" GroupName="EducationType"/>
-            <RadioButton x:Name="rbNotFirstTime" Content="не впервые" Margin="22,358,687,0" VerticalAlignment="Top" GroupName="EducationType"/>
-            <CheckBox x:Name="cbAgreement1" Content="С лицензией на право осуществления образовательной деятельности, свидетельством о государственной аккредитации,&#x0a;  правилами приёма и правилами внутреннего распорядка обучающихся в данном образовательном учреждении, с Уставом&#x0a; Техникума ознакомлен(а)." Margin="22,415,10,0" VerticalAlignment="Top" Height="51" IsChecked="False"/>
-            <CheckBox x:Name="cbAgreement2" Content="С датой представления оригиналов документов ознакомлен(а)" Margin="22,466,270,0" VerticalAlignment="Top" IsChecked="False"/>
-            <Button x:Name="btnContinue" Content="Продолжить" Margin="632,493,10,5" Click="Continue_Click"/>
-            <Label Content="Выберите специальность, на которой желаете учиться:" Margin="16,279,462,0" VerticalAlignment="Top"/>
+            <Grid Margin="0,60,0,-0.4">
+                <Label Content="Специальность " Margin="10,5,679,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                <Label Content="Выберите специальность, на которой желаете учиться:" Margin="9,31,469,0" VerticalAlignment="Top"/>
+                <Label Content="Можете выбрать несколько специальностей:" Margin="22,53,553,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
+                <CheckBox x:Name="cbSpeciality1" Content="12.02.01 Авиационные приборы и комплексы" Margin="22,75,497,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality2" Content="15.02.09 Адаптивные технологии" Margin="22,90,570,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality3" Content="09.02.07 Информационные системы и программирование (Программист)" Margin="22,105,343,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality4" Content="09.02.07 Информационные системы и программирование (Разработчик веб и мультимедийных приложений)" Margin="22,120,143,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality5" Content="09.02.01 Компьютерные системы и комплексы" Margin="22,135,494,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality6" Content="22.02.05 Литейное производство черных и цветных металлов" Margin="22,150,410,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality7" Content="15.02.10 Мехатроника и мобильная робототехника" Margin="22,165,469,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality8" Content="09.02.05 Прикладная информатика (по отраслям)" Margin="22,180,479,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality9" Content="24.02.03 Производство авиационных двигателей" Margin="22,195,481,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality10" Content="12.02.08 Радиоэлектронные приборные устройства" Margin="22,210,467,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality11" Content="15.02.08 Технология машиностроения" Margin="22,225,541,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality12" Content="15.02.15 Технология металлообрабатывающего производства" Margin="22,240,408,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="cbSpeciality13" Content="27.02.07 Управление качеством продукции, процессов и услуг" Margin="22,0,406,0" VerticalAlignment="Center"/>
+                <Label Content="Выберите один из вариантов:" Margin="22,310,623,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
+                <RadioButton x:Name="rbFirstTime" Content="впервые" Margin="22,338,703,0" VerticalAlignment="Top" GroupName="EducationType"/>
+                <RadioButton x:Name="rbNotFirstTime" Content="не впервые" Margin="22,358,687,0" VerticalAlignment="Top" GroupName="EducationType"/>
+                <CheckBox x:Name="cbAgreement1" Content="С лицензией на право осуществления образовательной деятельности, свидетельством о государственной аккредитации,&#x0a;  правилами приёма и правилами внутреннего распорядка обучающихся в данном образовательном учреждении, с Уставом&#x0a; Техникума ознакомлен(а)." Margin="22,415,10,0" VerticalAlignment="Top" Height="51" IsChecked="False"/>
+                <CheckBox x:Name="cbAgreement2" Content="С датой представления оригиналов документов ознакомлен(а)" Margin="22,466,270,0" VerticalAlignment="Top" IsChecked="False"/>
+                <Button x:Name="btnContinue" Content="Продолжить" Margin="632,493,10,5" Click="Continue_Click"/>
+                <Label Content="Выберите специальность, на которой желаете учиться:" Margin="16,279,462,0" VerticalAlignment="Top"/>
+            </Grid>
         </Grid>
-    </Grid>
+        </ScrollViewer>
 </Page>

@@ -4,7 +4,9 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_peshin.Pages"
-           mc:Ignorable="d" 
+           mc:Ignorable="d"
+      d:DesignHeight="410" d:DesignWidth="792"
+      
       Title="Passport" Height="700">
     <ScrollViewer VerticalScrollBarVisibility="Visible">
         <Grid Background="#F8F9FA" Margin="0,0,0,-21">

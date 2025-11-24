@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Submission_of_Applications_peshin.Pages;
 
 namespace Submission_of_Applications_peshin
 {
@@ -23,6 +24,12 @@ namespace Submission_of_Applications_peshin
         public MainWindow()
         {
             InitializeComponent();
+            frame.Navigate(new Statement());
+        }
+
+        public void NavigateToPage(Page page)
+        {
+            frame.Navigate(page);
         }
     }
 }

@@ -4,7 +4,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_peshin.Pages"
-           mc:Ignorable="d" d:DesignWidth="792"
+           mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="792"
       Title="Parents" Height="868">
     <ScrollViewer VerticalScrollBarVisibility="Visible">
         <Grid Background="#F8F9FA">
