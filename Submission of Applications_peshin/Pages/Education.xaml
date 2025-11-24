@@ -1,0 +1,42 @@
+﻿<Page x:Class="Submission_of_Applications_peshin.Pages.Education"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Submission_of_Applications_peshin.Pages"
+           mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="792"
+      Title="Education">
+    <Grid  Background="#F8F9FA">
+        <Grid Background="White" Height="60" VerticalAlignment="Top">
+            <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Source="/Images/logo.png"/>
+            <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
+            <Label Content="Пермского авиационного техникума им. А.Д. Швецова" HorizontalAlignment="Left" Margin="55,24,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Margin="0,60,0,-0.4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Сведения об образовании" Margin="10,10,221,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label Content="База:" Margin="10,41,349,0" VerticalAlignment="Top"/>
+            <Label Content="Выберите один из вариантов:" Margin="22,62,227,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
+            <Label Content="Выберите один из вариантов:" Margin="22,145,227,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
+            <RadioButton x:Name="rbAttestat" Content="Аттестат" Margin="22,0,310,0" VerticalAlignment="Center" GroupName="DocumentType"/>
+            <RadioButton x:Name="rbDiplom" Content="Диплом" Margin="22,183,311,0" VerticalAlignment="Top" GroupName="DocumentType"/>
+            <Label Content="Прикрепить сканы 1-ой и 2-ой приписного удоставерения или военного билета(стр. 1-5, 8-13, 20-21) при наличии " Margin="10,245,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+            <Label Content="(Формат документа должен быть PNG, JPEG или PDF,а максимальный размер каждого файла 5 МБ)" Margin="22,263,304,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtFilePath" Height="24" Margin="12,291,123,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+            <Button x:Name="btnContinue" Content="Продолжить" Margin="236,320,10,5" Click="Continue_Click" Grid.Column="1"/>
+            <Button x:Name="btnSelectFile" Content="Выбрать" Margin="278,291,10,0" VerticalAlignment="Top" Height="24" Click="SelectFile_Click" Grid.Column="1"/>
+            <RadioButton x:Name="rbClass9" Content="9 класс" Margin="22,85,316,0" VerticalAlignment="Top" GroupName="EducationBase"/>
+            <RadioButton x:Name="rbClass11" Content="11 класс" Margin="22,100,309,0" VerticalAlignment="Top" GroupName="EducationBase"/>
+            <RadioButton x:Name="rbSPO" Content="СПО" Margin="22,115,330,0" VerticalAlignment="Top" GroupName="EducationBase"/>
+            <RadioButton x:Name="rbVPO" Content="ВПО" Margin="22,130,331,0" VerticalAlignment="Top" GroupName="EducationBase"/>
+            <TextBox x:Name="txtDocumentNumber" Height="24" Margin="10,221,12,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtAverageScore" Height="24" Margin="10,221,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1"/>
+            <Label Content="Серия и номер документа об образовании:" Margin="11,195,11,0" VerticalAlignment="Top"/>
+            <Label Content="Средний балл (до сотых):" Margin="10,190,10,0" VerticalAlignment="Top" Grid.Column="1"/>
+        </Grid>
+    </Grid>
+</Page>
